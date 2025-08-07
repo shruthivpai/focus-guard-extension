@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Focus Guard",
+  "version": "1.0",
+  "description": "Slows down internet on social media or blocks it, and boosts when productive.",
+  "permissions": ["tabs", "scripting", "storage"],
+  "options_page": "options.html",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "host_permissions": ["<all_urls>"]
+}
